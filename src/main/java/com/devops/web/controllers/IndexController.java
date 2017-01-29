@@ -1,7 +1,13 @@
 package com.devops.web.controllers;
 
-/**
- * Created by huta on 29.01.2017.
- */
-public class IndexCOntroller {
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class IndexController {
+
+    @RequestMapping("/")
+    public String home() {
+        return "index";
+    }
 }
